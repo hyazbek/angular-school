@@ -6,3 +6,6 @@
   Number of Rooms:
   <div [innerText]="numberOfRooms"></div>
 </div>
+<div *ngIf="rooms.availableRooms > 0">
+  <h3> Rooms List</h3>
+</div>
