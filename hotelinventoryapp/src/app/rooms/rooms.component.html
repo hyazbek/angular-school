@@ -7,13 +7,15 @@
   <div [innerText]="numberOfRooms"></div>
 </div>
 
-{{rooms?.availableRooms ??'No rooms'}}
+{{ rooms?.availableRooms ?? "No rooms" }}
 
 <div *ngIf="selectedRoom">
-  {{selectedRoom.price}}
+  {{ selectedRoom.price }}
 </div>
 
 <div *ngIf="rooms.availableRooms > 0">
-  <app-rooms-list [rooms]="roomList"
-  (roomSelected)="selectRoom($event)"/>
+  <app-rooms-list [rooms]="roomList" (roomSelected)="selectRoom($event)" />
+</div>
+<div>
+  <button (click)="addRoom()">Add Room</button>
 </div>
