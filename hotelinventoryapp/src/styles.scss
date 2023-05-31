@@ -3,3 +3,12 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
+.even{
+    background-color: lightblue;
+    color: black;
+}
+
+.odd{
+    background-color: grey;
+    color: black;
+}
